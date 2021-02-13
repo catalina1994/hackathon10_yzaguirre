@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 10</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="banner py-1 px-1">
+        <div class="flex justify-end">
+            <i id="btnmenu" class="material-icons  third-color btn ">dehaze</i>
+        </div>
+        <h2 class="banner__caption">Hackathon 10</h2>
+    </div>
+    <nav class="menu third-color">
+        <i id="btnClose" class="material-icons flex justify-end btn ">close</i>
+        <h3 class="pb-1 ">Indice</h3>
+        <article >
+            <ul class="menu__list">
+                <li><a href="#ejercicio1">Ejercicio 1</a></li>
+                <li><a href="#ejercicio2">Ejercicio 2</a></li>
+                <li><a href="#ejercicio3">Ejercicio 3</a></li>
+                <li><a href="#ejercicio4">Ejercicio 4</a></li>
+                <li><a href="#ejercicio5">Ejercicio 5</a></li>
+                <li><a href="#ejercicio6">Ejercicio 6</a></li>
+                <li><a href="#ejercicio7">Ejercicio 7</a></li>
+                <li><a href="#ejercicio8">Ejercicio 8</a></li>
+                <li><a href="#ejercicio9">Ejercicio 9</a></li>
+                <li><a href="#ejercicio10">Ejercicio 10</a></li>
+                <li><a href="#ejercicio11">Ejercicio 11</a></li>
+                <li><a href="#ejercicio12">Ejercicio 12</a></li>
+               
+            </ul>
+        </article>
+    </nav>
+    <div class="container">
+        <section class="my-2">
+            <h2 class="mb-1 secundary-color">Reto 2</h2>
+            <h3 class="mb-1">Ejecicios de lagoritmos</h3>
+            <section>
+                <article class="card" id="ejercicio1">
+                    <h4 class="card__title">Ejercico 1</h4>
+                    <pre><code>
+  const saludo = function(name, lastname, age){
+    let person = `Hola mi nombre es ${name} ${lastname} y mi edad es ${age}.`
+    return console.log(person)
+}
+saludo('Pamela', 'Salas' , '35')
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio2">
+                    <h4 class="card__title">Ejercico 2</h4>
+                    <pre><code>
+const sumaCubos =function(num1, num2, num3){
+    let suma = Math.pow(num1,3) + Math.pow(num2,3) + Math.pow(num3,3)
+    return console.log(`La suma de los cubos de ${num1}, ${num2} y ${num3} es igual a ${suma} `)
+}
+sumaCubos(5, 4 , 2)
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio3">
+                    <h4 class="card__title">Ejercico 3</h4>
+                    <pre><code>
+ const tipoValor = function(valor){
+     tipo = typeof(valor)
+     return console.log ( `El valor "${valor}" es del tipo  "${tipo}".`)
+ }
+ tipoValor( 'rica')
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio4">
+                    <h4 class="card__title">Ejercico 4</h4>
+                    <pre><code>
+ const sumat = function(...numb){
+     return numb.reduce( (prev, current) =>{
+         return prev + current
+     })
+ }
+ console.log(sumat(1,5,8)) 
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio5">
+                    <h4 class="card__title">Ejercico 5</h4>
+                    <pre><code>
+  const noString = function( ...valores){
+      valores.forEach(valor =>{
+          let tipoValu = typeof(valor)
+          if( tipoValu !== 'string'){
+            return console.log(valor)
+          }
+      })
+      }
+  noString( 1 ,'pa',5, 'sueter',8)
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio6">
+                    <h4 class="card__title">Ejercico 6</h4>
+    <pre><code>
+ const numers =[1, 8, 5, 4, 25]
+
+  const  maxMin =function(...mumers){
+      let max =Math.max(...numers),
+        min = Math.min(...numers)
+    return console.log(`El mayor numero es ${max} y el menor es ${min}`)
+  }
+  maxMin()
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio7">
+                    <h4 class="card__title">Ejercico 7</h4>
+    <pre><code>
+ const numFone = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+const fone = function(){
+    numberNew = numFone.slice(0,3).join('')
+    numberTwo = numFone.slice(4,10).join('')
+    return console.log(`Es (${numberNew}) ${numberTwo} `)
+}
+fone()
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio8">
+                    <h4 class="card__title">Ejercico 8</h4>
+    <pre><code>
+const findNums = [[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]
+findNums.forEach( valor =>{
+    valorM = Math.max(...valor)
+    return console.log(valorM )
+})
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio9">
+                    <h4 class="card__title">Ejercico 9</h4>
+    <pre><code>
+const palabra =function(nota1){
+    pIndex = nota1.length-1
+    pLetra = nota1[nota1.length-1]
+    return console.log(`En esta palabra la letra "${pLetra}" tiene el indice "${pIndex}"`)
+}
+palabra('mar')
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio10">
+                    <h4 class="card__title">Ejercico 10</h4>
+    <pre><code>
+const obj = { a: 1, b: 2 }
+const sumValues = obj => Object.values(obj)
+console.log(sumValues(obj))
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio11">
+                    <h4 class="card__title">Ejercico 11</h4>
+    <pre><code>
+const data =[
+    { name: "John", age: 21, budget: 23000 },
+    { name: "Steve",  age: 32, budget: 40000 },
+    { name: "Martin",  age: 16, budget: 2700 }
+  ]
+
+  const sumaBud =function(){
+      let suma =0
+      data.forEach(user =>{
+          suma+= user.budget
+      })
+      return console.log(`La suma total es de ${suma}`)
+  }
+  sumaBud()
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio12">
+                    <h4 class="card__title">Ejercico 12</h4>
+    <pre><code>
+ const students =[
+    { name: "Steve" },
+    { name: "Mike" },
+    { name: "John" }
+  ]
+  const nameStudents = function(){
+    let names =[]
+    students.forEach(student =>{
+        names+= student.name
+    })
+    return console.log(Array.from(names))
+  }
+  nameStudents()
+    </code></pre>
+                </article>
+               
+            </section>
+        </section>
+    </div>
+    <script src="./js/main.js"></script>
+    <script>
+            const btnMenu = document.getElementById('btnmenu')
+            const Menu = document.querySelector('.menu')
+            const btnClose = document.getElementById('btnClose')
+            btnMenu.addEventListener("click", function (e) {
+                Menu.classList.toggle('active')
+        })
+        btnClose.addEventListener("click", function (e) {
+              Menu.classList.remove('active')
+        })
+    </script>
+</body>
+</html>
